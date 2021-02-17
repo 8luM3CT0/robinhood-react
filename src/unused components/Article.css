@@ -1,0 +1,19 @@
+.article__title {
+    display: flex;
+    align-items: center;
+    padding: 20px 0px 10px 0px;
+}
+
+.article__source {
+    font-weight: bold;
+    flex: 1;
+}
+
+.article__content {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #3b4754;
+}

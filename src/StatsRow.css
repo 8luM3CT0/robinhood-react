@@ -1,0 +1,52 @@
+.statsRow {
+    flex-direction: column;
+    display: flex;
+    height: 60px;
+    padding: 0 24px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.statsRow:hover {
+    background-color: #31363A;
+}
+
+.statsRow__intro {
+    display: flex;
+    align-items: center;
+}
+
+.statsRow__intro>h1 {
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 2px;
+}
+
+.statsRow__intro>p {
+    margin-left: 20px;
+}
+
+.statsRow__chart {
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.statsRow__intro>p {
+    font-size: 12px;
+}
+
+.statsRow__numbers {
+    text-align: end;
+    align-items: center;
+    font-weight: 500;
+}
+
+.statsRow__price {
+    padding-bottom: 4px;
+}
+
+.statsRow__percentage {
+    color: #5AC53B;
+}
