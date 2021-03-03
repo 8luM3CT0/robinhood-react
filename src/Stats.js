@@ -39,16 +39,16 @@ function Stats() {
                 })
               })
             )})
-            console.log(tempData);
             Promise.all(promises).then(()=>{
               setMyStocks(tempData);
             })
+            console.log(tempData)
         })
       }
 
 
       useEffect(() => {
-          const stocksList = ["AAPL", "MSFT", "TSLA", "FB", "UBER", "AMZN", "GOOGL", "VZ", "TWTR"];
+          const stocksList = ["AAPL", "MSFT", "TSLA", "FB", "UBER", "AMZN", "GOOGL", "VZ", "TWTR", "IBM", "ABNB", "PINS"];
         
           getMyStocks();
           let promises = [];
@@ -82,10 +82,10 @@ function Stats() {
                         {myStocks.map((stock) => (
                             <StatsRow
                             key={stock.data.ticker}
-                            name={stock.data.name}
-                            openPrice={stock.data.openPrice}
-                            volume={stock.data.volume}
-                            price={stock.data.price}
+                            name={stock.data.ticker}
+                            openPrice={stock.info.o}
+                            volume={stock.data.shares}
+                            price={stock.info.c}
                             />
                             ))}
                     </div>
